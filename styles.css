@@ -161,7 +161,8 @@ h3 {
 
 #recipe-box{
     border-radius: 1rem;
-    width: 700px;
+    margin-left: 25%;
+    margin-right: 25%;
     height: 275px;
     background: #f8e5ff;
     box-sizing: border-box;
