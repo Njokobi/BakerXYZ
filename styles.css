@@ -140,6 +140,7 @@ h3 {
 }
 
 #recipe-container{
+    width: 800px;
     height: 400px;
     background: #e1c6ff;
     border-radius: 2rem;
