@@ -16,9 +16,9 @@
     </div>
     <h3 align="center" >Select Your Ingredients!</h3>
     <div align="center" id="selecta-recipie-container">
-        <input type="button" value="Eggs" id="top" onclick="addToTaglist(`i=eggs`)">
-        <input type="button" value="Flour" id="top" onclick="addToTaglist(`i=flour`)">
-        <input type="button" value="Water" id="top" onclick="addToTaglist(`i=water`)">
+        <input type="button" value="Eggs" id="top" onclick="addToTaglist(`i=eggs`), setColor('#top')">
+        <input type="button" value="Flour" id="top" onclick="addToTaglist(`i=flour`), setColor('#top')">
+        <input type="button" value="Water" id="top" onclick="addToTaglist(`i=water`), setColor('#top')">
         <br>
         <br>
         <input type="button" value="Butter" id="middle-up" onclick="addToTaglist(`i=butter`)">
@@ -50,8 +50,11 @@
     <br>
     <div align="center" id="random-recipie-container">
         <h3>. . . Or Get a Random Meal!</h3>
-        <img src="download.gif" alt="animation stating: you're next favorite recipe is one click away!">
-        <h4 id="random-recipie-name"></h4> <br>
+        <img src="random-meal-placeholder.gif" alt="animation stating: you're next favorite recipe is one click away!">
+        <br>
+        <h4 id="random-recipie-name"></h4> 
+        <br>
+        <br>
         <p id="random-recipie"></p>
     </div>
 </body>
