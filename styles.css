@@ -34,30 +34,35 @@ body{
     font-weight: bold;
     margin: 0 .5rem;
     transition: all 0.3s ease-in-out;
-    color:#CDC392;
+    color:#FF95D3;
+    background: #FFDDF4;
     
 }
 
 #top:hover {
     cursor: pointer;
     transform: scale(1.05);
+    color:#C3976D;
     background: var(--dough-brown);
 }
 
 #middle-up:hover {
     cursor: pointer;
     transform: scale(1.05);
-    background: var(--frosting-pink);
+    color: #6DBEA2;
+    background: var(--mint-green);
 }
 
 #middle-down:hover {
     cursor: pointer;
     transform: scale(1.05);
+    color: #B7AC49;
     background: var(--zest-yellow);
 }
 
 #bottom:hover {
     cursor: pointer;
     transform: scale(1.05);
-    background: var(--berry-blue);
+    color: #4579A3;
+    background: #b1d9f9;
 }
