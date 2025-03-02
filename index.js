@@ -3,6 +3,8 @@ let pageMealList = [];
 const mandatoryTagList = [`dessert`, `tart`, `sweet`, `pudding`, `baking`, `pancake`];
 const randTagList = [`c=dessert`, `c=tart`, `c=sweet`, `c=pudding`, `c=baking`, `c=pancake`];
 
+setActiveMeal(getRandomMealByTags())
+
 function addToTaglist(tag) {
     if (pageTaglist.includes(tag)) {
         pageTaglist.splice(pageTaglist.indexOf(tag), 1);
@@ -91,13 +93,23 @@ async function getMealListByIdList(idListPromise) {
     });
 }
 
-function getRandomMeal(){
-    return await 
+async function getRandomMealByTags(){
+    if(pageTaglist.length === 0){
+        taglist = randTagList;
+    } else {
+        taglist = pageTaglist;
+    }
+    meallist = await getMealListByIdList(getIdsByTaglist(taglist));
+    return meallist[Math.floor(Math.random() * meallist.length)]
 }
 
-async function setActiveMeal(meal){
+async function setActiveMeal(mealPromise){
+    
+    let meal = await mealPromise;
     document.querySelector("#recipe-name").textContent = meal.strMeal;
     document.querySelector("#recipe-text").textContent = meal.strInstructions;
+    document.querySelector("#recipe-origin").textContent = "Link"
+    document.querySelector("#recipe-origin").href = meal.strSource;
     if(meal.strMealThumb !== null){
         document.querySelector("#recipe-image").src = meal.strMealThumb;
     } else{
