@@ -11,7 +11,7 @@
 }
 
 body{
-
+    background-color: var(--sugar-white);
 }
 
 #selecta-recipie-container {
@@ -32,7 +32,26 @@ body{
     
 }
 
-#selecta-recipie-container input:hover {
+#top:hover {
     cursor: pointer;
     transform: scale(1.05);
+    background: var(--dough-brown);
+}
+
+#middle-up:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background: var(--frosting-pink);
+}
+
+#middle-down:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background: var(--zest-yellow);
+}
+
+#bottom:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background: var(--berry-blue);
 }
