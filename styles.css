@@ -48,6 +48,7 @@ h3 {
 #selecta-recipie-container {
     align-items: center;
     margin: 0 auto;
+    color: var(--frosting-pink)
 }
 
 #selecta-recipie-container input {
@@ -59,7 +60,7 @@ h3 {
     font-weight: bold;
     margin: 0 .5rem;
     transition: all 0.3s ease-in-out;
-    color: var(--icing-pink);
+    color: var(--donut-pink);
     background: var(--frosting-pink);
     
 }
@@ -120,4 +121,36 @@ h3 {
 #submit:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+#random-recipe-name{
+    color: #ae7eca;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+#random-ingredienta{
+    padding-top: 15px;
+    color: #ae7eca;
+}
+
+#random-recipe{
+    color: #ae7eca;
+}
+
+#recipe-container{
+    height: 400px;
+    background: #e1c6ff;
+    border-radius: 2rem;
+    border: var(--grape-purple);
+}
+
+#recipe-box{
+    border-radius: 1rem;
+    width: 700px;
+    height: 275px;
+    background: #f8e5ff;
+    box-sizing: border-box;
+    padding-bottom: 20px;
 }
