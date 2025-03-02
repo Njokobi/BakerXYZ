@@ -1,3 +1,14 @@
-div {
-    margin: auto;
+.button-container {
+    align-items:stretch;
+}
+.button-container input{
+    margin-right: 6px;
+}
+
+.button-container input:last-child {
+    margin-right: 0px;
+}
+
+#selecta-recipie-container {
+    
 }
