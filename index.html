@@ -4,8 +4,8 @@
         <title>BakerXYZ</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     </head>
     <body>
         <div align = "left" id = "site-header">
@@ -14,31 +14,32 @@
         </div>
         <h3 align = "center">Select Your Ingredients!</h3>
         <div align = "center" id = "selecta-recipie-container">
-            <div class = "button-container">
                 <input type="button" value="Eggs" id="ingredient" onclick="addToTaglist(`i=eggs`)">
                 <input type="button" value="Flour" id="ingredient" onclick="addToTaglist(`i=flour`)">
                 <input type="button" value="Water" id="ingredient" onclick="addToTaglist(`i=water`)">
-            </div>
             <br>
             <br>
-            <div class = "button-container">
                 <input type="button" value="Butter" id="ingredient" onclick="addToTaglist(`i=butter`)">
                 <input type="button" value="Yeast" id="ingredient" onclick="addToTaglist(`i=yeast`)">
                 <input type="button" value="Baking Powder" id="ingredient" onclick="addToTaglist(`i=baking_powder`)">
-            </div>
             <br>
             <br>
-            <div class = "button-container">
                 <input type="button" value="Sugar" id="ingredient" onclick="addToTaglist(`i=sugar`)">
                 <input type="button" value="Vanilla Extract" id="ingredient" onclick="addToTaglist(`i=vanilla_extract`)">
                 <input type="button" value="Corn Starch" id="ingredient" onclick="addToTaglist(`i=corn_starch`)">
             </div>
             <br>
             <br>
-            <div class = "button-container">
                 <input type="button" value="Heavy Cream" id="ingredient" onclick="addToTaglist(`i=heavy_cream`)">
                 <input type="button" value="Milk" id="ingredient" onclick="addToTaglist(`i=milk`)">
                 <input type="button" value="Shortening" id="ingredient" onclick="addToTaglist(`i=shortening`)">
+            <input type="button" value="Find Your Recipie!" id = "submit">
+
+            <div>
+                <h3>Baking Fun Below!</h3>
+                <img src="" alt="recipie picture">
+                <h4 id = "selected-recipie-name"></h4> <br>
+                <p id = "selected-recipie"></p>
             </div>
         </div>
         <br>
