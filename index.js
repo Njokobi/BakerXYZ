@@ -1,6 +1,7 @@
 let pageTaglist = [];
 let pageMealList = [];
 let mandatoryTagList = [`dessert`, `tart`, `sweet`, `pudding`, `baking`, `pancake`];
+let randTagList = [`c=dessert`, `c=tart`, `c=sweet`, `c=pudding`, `c=baking`, `c=pancake`];
 
 function addToTaglist(tag) {
     if (pageTaglist.includes(tag)) {
