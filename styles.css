@@ -1,14 +1,8 @@
-.button-container {
-    align-items:stretch;
-}
-.button-container input{
-    margin-right: 6px;
-}
-
-.button-container input:last-child {
-    margin-right: 0px;
+* {
+    font-family: Jua, serif;
 }
 
 #selecta-recipie-container {
-    
+    align-items: center;
+    margin: 0 auto;
 }
