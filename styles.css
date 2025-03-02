@@ -10,8 +10,10 @@
     --sugar-white: #FFFEF9;
 }
 
-body{
-
+.header{
+    font-family: Jua, serif;
+    color:#FF95D3;
+    font-weight:bold
 }
 
 #selecta-recipie-container {
