@@ -138,6 +138,7 @@ h3 {
 #recipe-text{
     padding-top: 15px;
     color: #ae7eca;
+    width: 700px;
 }
 
 #random-recipe{
@@ -151,12 +152,11 @@ h3 {
 
 #boxes{
     width: 800px;
-    height: 400px;
-    margin-left: 25%;
-    margin-right: 25%;
+    height: auto;
     background: #e1c6ff;
     border-radius: 2rem;
     border: var(--grape-purple);
+    padding: 20px;
 }
 
 #recipe-box{
