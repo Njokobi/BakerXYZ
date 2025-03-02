@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BakerXYZ</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div align = "left" id = "site-header">
-            <img src="logo.png" alt="logo" width="400px" height = "200px">
-            <h2 id="saying" style="padding-left: 10%;">For when you don't know what to bake</h2>
-        </div>
-        <h3 align = "center">Select Your Ingredients!</h3>
-        <div align = "center" id = "selecta-recipie-container">
-            <input type="button" value="Eggs" id="ingredient">
-            <input type="button" value="Flour" id="ingredient">
-            <input type="button" value="Water" id="ingredient">
-            <br>
-            <br>
-            <input type="button" value="Butter" id="ingredient">
-            <input type="button" value="Yeast" id="ingredient">
-            <input type="button" value="Baking Powder" id="ingredient">
-            <br>
-            <br>
-            <input type="button" value="Sugar" id="ingredient">
-            <input type="button" value="Vanilla Extract" id="ingredient">
-            <input type="button" value="Corn Starch" id="ingredient">
-            <br>
-            <br>
-            <input type="button" value="Heavy Cream" id="ingredient">
-            <input type="button" value="Milk" id="ingredient">
-            <input type="button" value="Shortening" id="ingredient"> 
-            <br>
-            <br>
 
-            <input type="button" value="Find Your Recipie!" id = "submit">
+<head>
+    <title>BakerXYZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
 
-            <div>
-                <h3>Baking Fun Below!</h3>
-                <img src="" alt="recipie picture">
-                <h4 id = "selected-recipie-name"></h4> <br>
-                <p id = "selected-recipie"></p>
-            </div>
-        </div>
+<body>
+    <div align="left" id="site-header">
+        <img src="logo.png" alt="logo" width="400px" height = "200px">
+        <h2 id="saying" style="padding-left: 10%;">For when you don't know what to bake</h2>
+    </div>
+    <h3 align="center">Select Your Ingredients!</h3>
+    <div align="center" id="selecta-recipie-container">
+        <input type="button" value="Eggs" id="ingredient" onclick="addToTaglist(`i=eggs`)">
+        <input type="button" value="Flour" id="ingredient" onclick="addToTaglist(`i=flour`)">
+        <input type="button" value="Water" id="ingredient" onclick="addToTaglist(`i=water`)">
         <br>
         <br>
-        <div align = "center" id = "random-recipie-container">
-            <h3>. . . Or Get a Random Meal!</h3>
-            <img src="bread.png" alt="picture of a bread emoji">
-            <h4 id = "random-recipie-name">Look at that bread!</h4> <br>
-            <p id = "random-recipie"></p>
-        </div>
-    </body>
-    <script src="index.js"></script>
+        <input type="button" value="Butter" id="ingredient" onclick="addToTaglist(`i=butter`)">
+        <input type="button" value="Yeast" id="ingredient" onclick="addToTaglist(`i=yeast`)">
+        <input type="button" value="Baking Powder" id="ingredient" onclick="addToTaglist(`i=baking_powder`)">
+        <br>
+        <br>
+        <input type="button" value="Sugar" id="ingredient" onclick="addToTaglist(`i=sugar`)">
+        <input type="button" value="Vanilla Extract" id="ingredient" onclick="addToTaglist(`i=vanilla_extract`)">
+        <input type="button" value="Corn Starch" id="ingredient" onclick="addToTaglist(`i=corn_starch`)">
+        <br>
+        <br>
+        <input type="button" value="Heavy Cream" id="ingredient" onclick="addToTaglist(`i=heavy_cream`)">
+        <input type="button" value="Milk" id="ingredient" onclick="addToTaglist(`i=milk`)">
+        <input type="button" value="Shortening" id="ingredient" onclick="addToTaglist(`i=shortening`)">    
+    </div>
+    <input type="button" value="Find Your Recipie!" id="submit">
+
+    <div>
+        <h3>Baking Fun Below!</h3>
+        <img src="" alt="recipie picture">
+        <h4 id="selected-recipie-name"></h4> <br>
+        <p id="selected-recipie"></p>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div align="center" id="random-recipie-container">
+        <h3>. . . Or Get a Random Meal!</h3>
+        <img src="bread.png" alt="picture of a bread emoji">
+        <h4 id="random-recipie-name">Look at that bread!</h4> <br>
+        <p id="random-recipie"></p>
+    </div>
+</body>
+<script src="index.js"></script>
+
 </html>

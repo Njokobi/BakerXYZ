@@ -2,7 +2,12 @@ let pageTaglist = [];
 let pageMealList = [];
 
 function addToTaglist(tag){
-    pageTaglist.push(tag);
+    if(pageTaglist.includes(tag)){
+        pageTaglist.splice(pageTaglist.indexOf(tag));
+    } else {
+        pageTaglist.push(tag);
+    }
+    console.log(pageTaglist);
 }
 
 async function getIdsByTaglist(taglist) {
