@@ -36,7 +36,7 @@
         <input type="button" value="Shortening" id="bottom" onclick="addToTaglist(`i=shortening`)">  
         <br>
         <br>
-        <input type="button" value="Find Your Recipe!" style="background: #f8e5ff; color: #CCA8EF" id="submit" onclick="setPageMealList(getMealListByIdList(getIdsByPageTaglist()))">
+        <input type="button" value="Find Your Recipe!" style="background: #f8e5ff; color: #CCA8EF" id="submit" onclick="setActiveMeal(getRandomMealByTags())">
     </div>
     <h2>Your ingredients:</h2>
     <h2 id="tag-list"></h2>
@@ -45,11 +45,9 @@
     </div>
     <br>
     <div align="center" id="recipie-container">
-        <img id="recipe-image">
+        <img id="recipe-image" src="download-3.gif">
         <div id="recipe-text-container">        
             <h3 id="recipe-name">Loading Recipe</h3> 
-            <br>
-            <p id="ingredients">...</p>
             <br>
             <p id="recipe-text">...</p>
             <br>
