@@ -12,7 +12,7 @@
 <body>
     <div align="center" id="site-header">
         <img src="logo.png" alt="logo" width="400px" height = "200px">
-        <h2 id="saying" style = "text-decoration: ;"class="header">For when you don't know what to bake!</h2>
+        <h2 id="saying" class="header">"For when you don't know what to bake!"</h2>
     </div>
     <h3 align="center" class="ingredients">Select Your Ingredients!</h3>
     <div align="center" id="selecta-recipie-container">
@@ -22,8 +22,8 @@
         <br>
         <br>
         <input type="button" value="Butter" id="middle-up" onclick="addToTaglist(`i=butter`)">
-        <input type="button" value="Yeast" id="middle-up" onclick="addToTaglist(`i=yeast`)">
-        <input type="button" value="Chocolate" id="middle-up" onclick="addToTaglist(`i=baking_powder`)">
+        <input type="button" value="Apples" id="middle-up" onclick="addToTaglist(`i=apples`)">
+        <input type="button" value="Chocolate" id="middle-up" onclick="addToTaglist(`i=chocolate`)">
         <br>
         <br>
         <input type="button" value="Sugar" id="middle-down" onclick="addToTaglist(`i=sugar`)">
@@ -36,7 +36,7 @@
         <input type="button" value="Shortening" id="bottom" onclick="addToTaglist(`i=shortening`)">  
         <br>
         <br>
-        <input type="button" value="Find Your Recipe!" id="submit" style="background: #E7CFFF; color: #9266BD"> 
+        <input type="button" value="Find Your Recipe!" id="submit" style="background: #E7CFFF; color: #9266BD" onclick="setPageMealList(getMealListByIdList(getIdsByPageTaglist()))">
     </div>
 
     <div align = "center">

@@ -10,6 +10,7 @@
     --sugar-white: #FFFEF9;
     --brown-sugar: #CDC392;
     --cutting-board-grey: #F0F0F0;
+    --icing-pink: #FF95D3;
 }
 
 body{
@@ -22,9 +23,9 @@ h3 {
 }
 
 .header{
-    font-family: Jua, serif;
     color:#FF95D3;
-    font-weight:bold
+    font-weight:bold;
+    font-style: italic;
 }
 
 .ingredients{
@@ -54,8 +55,8 @@ h3 {
     font-weight: bold;
     margin: 0 .5rem;
     transition: all 0.3s ease-in-out;
-    color:#FF95D3;
-    background: #FFDDF4;
+    color: var(--icing-pink);
+    background: var(--frosting-pink);
     
 }
 
