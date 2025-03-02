@@ -36,7 +36,7 @@
         <input type="button" value="Shortening" id="bottom" onclick="addToTaglist(`i=shortening`)">  
         <br>
         <br>
-        <input type="button" value="Find Your Recipe!" id="submit" onclick="setPageMealList(getMealListByIdList(getIdsByPageTaglist()))">
+        <input type="button" value="Find Your Recipe!" id="submit" onclick="setActiveMeal(getRandomMealByTags())">
     </div>
     <h2>Your ingredients:</h2>
     <h2 id="tag-list"></h2>
@@ -49,8 +49,6 @@
         <div id="recipe-text-container">        
             <h3 id="recipe-name">Loading Recipe</h3> 
             <br>
-            <p id="ingredients">...</p>
-            <br>
             <p id="recipe-text">...</p>
             <br>
             <a id="recipe-origin"></a>
@@ -59,7 +57,7 @@
     </div>
     <div align="center" id="random-container">
         <h3 class="random">. . . Or Get a Random Meal!</h3>
-        <img src="https://www.nyonyacooking.com/recipes/apam-balik~SJ5WuvsDf9WQ" height="350px" alt="animation stating: you're next favorite recipe is one click away!">
+        <img src="random-meal-placeholder.gif" height="350px" alt="animation stating: you're next favorite recipe is one click away!">
     </div>
 </body>
 <script src="index.js"></script>
