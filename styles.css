@@ -1,16 +1,20 @@
 * {
     font-family: Jua, serif;
-    --frosting-pink: #FFDDF4;
     --dough-brown: #EACAAB;
     --jam-red: #FF95D3;
     --zest-yellow: #FFF492;
+    --citron-yellow: #B7AC49;
     --mint-green: #CFFDED;
-    --berry-blue: #7FC5FF;
+    --tea-green: #6DBEA2;
+    --berry-blue:#4579A3;
+    --ice-blue: #b1d9f9;
     --grape-purple: #CCA8EF;
+    --donut-pink: #FF95D3;
+    --frosting-pink: #FFDDF4;
     --sugar-white: #FFFEF9;
-    --brown-sugar: #CDC392;
     --cutting-board-grey: #F0F0F0;
-    --icing-pink: #FF95D3;
+    --brown-sugar: #CDC392;
+    --brioche-brown: #C3976D;
 }
 
 body{
@@ -23,7 +27,7 @@ h3 {
 }
 
 .header{
-    color:#FF95D3;
+    color: var(--donut-pink);
     font-weight:bold;
     font-style: italic;
 }
@@ -50,29 +54,29 @@ h3 {
 #top:hover {
     cursor: pointer;
     transform: scale(1.05);
-    color:#C3976D;
+    color:var(--brioche-brown);
     background: var(--dough-brown);
 }
 
 #middle-up:hover {
     cursor: pointer;
     transform: scale(1.05);
-    color: #6DBEA2;
+    color: var(--tea-green);
     background: var(--mint-green);
 }
 
 #middle-down:hover {
     cursor: pointer;
     transform: scale(1.05);
-    color: #B7AC49;
+    color: var(--citron-yellow);
     background: var(--zest-yellow);
 }
 
 #bottom:hover {
     cursor: pointer;
     transform: scale(1.05);
-    color: #4579A3;
-    background: #b1d9f9;
+    color: var(--berry-blue);
+    background: var(--ice-blue);
 }
 
 #submit {
