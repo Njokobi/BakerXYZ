@@ -1,5 +1,6 @@
-let pageTaglist = [`c=dessert`, `c=tart`, `c=sweet`, `c=pudding`, `c=baking`, `c=pancake`];
+let pageTaglist = [];
 let pageMealList = [];
+let mandatoryTagList = [`dessert`, `tart`, `sweet`, `pudding`, `baking`, `pancake`];
 
 function addToTaglist(tag) {
     if (pageTaglist.includes(tag)) {
@@ -77,6 +78,21 @@ async function getMealListByIdList(idListPromise) {
     let idList = await idListPromise;
     for (i in idList) {
         await getMealById(idList[i]).then((meal) => {
+            let isAllowed = false;
+            for(j in mandatoryTagList){
+                if(meal.strCategory.toLowerCase().includes(mandatoryTagList[j])){
+                        isAllowed = true;
+                        break;
+                } else if(meal.strTags !== null){
+                    if(meal.strTags.toLowerCase().includes(mandatoryTagList[j])){
+                        isAllowed = true;
+                        break;
+                    }
+                }
+            }
+            if(!isAllowed){
+                return;
+            }
             tempList.push(meal);
         });
     }
