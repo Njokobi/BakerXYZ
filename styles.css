@@ -27,6 +27,19 @@ h3 {
     font-weight:bold
 }
 
+.ingredients{
+    font-family: Jua, serif;
+    color:var(--berry-blue);
+}
+
+.baking-fun{
+    color:var(--berry-blue);
+}
+
+.random{
+    color:var(--berry-blue);
+}
+
 #selecta-recipie-container {
     align-items: center;
     margin: 0 auto;
@@ -83,11 +96,10 @@ h3 {
     font-weight: bold;
     margin: 0 .5rem;
     transition: all 0.3s ease-in-out;
-    color: var(--brown-sugar);
 }
+
 
 #submit:hover {
     cursor: pointer;
     transform: scale(1.05);
-    background: var(--mint-green);
 }
