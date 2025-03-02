@@ -6,3 +6,7 @@
     align-items: center;
     margin: 0 auto;
 }
+
+#selecta-recipie-container input {
+    width: 200px;
+}
