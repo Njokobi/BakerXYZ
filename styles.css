@@ -128,14 +128,14 @@ h3 {
     background: var(--tea-green);
 }
 
-#random-recipe-name{
+#recipe-name{
     color: #ae7eca;
     font-size: x-large;
     font-weight: bold;
     padding-top: 25px;
 }
 
-#random-ingredienta{
+#recipe-text{
     padding-top: 15px;
     color: #ae7eca;
 }
@@ -144,7 +144,12 @@ h3 {
     color: #ae7eca;
 }
 
-#recipe-container{
+#recipe-image{
+    width:auto;
+    height:90%;
+}
+
+#boxes{
     width: 800px;
     height: 400px;
     margin-left: 25%;
