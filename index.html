@@ -2,29 +2,39 @@
 <html>
     <head>
         <title>BakerXYZ</title>
-        <link rel="stylesheet" href="stlyes.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div align = "center" id = "site-header">
+        <div align = "left" id = "site-header">
             <h1>BakerXYZ</h1>
             <h2 id="saying">For when you don't know what to bake</h2>
         </div>
+        <h3 align = "center">Select Your Ingredients!</h3>
         <div align = "center" id = "selecta-recipie-container">
-            <h3>Select Your Ingredients!</h3>
-            <form action="">
-                <input type = "checkbox" name="eggs" id="ingredient">Eggs</input> <br>
-                <input type = "checkbox" name="flour" id="ingredient">Flour</input> <br>
-                <input type = "checkbox" name="apples" id="ingredient">Apples</input> <br>
-                <input type = "checkbox" name="banana" id="ingredient">Banana</input> <br>
-                <input type = "checkbox" name="pumpkin" id="ingredient">Pumpkin</input> <br>
-                <input type = "checkbox" name="Banana" id="ingredient">Banana</input> <br>
-                <input type = "checkbox" name="Vanilla" id="ingredient">Banana</input> <br>
-            </form>
-            
+            <div class = "button-container">
+                <input type="button" value="Eggs" id="ingredient">
+                <input type="button" value="Flour" id="ingredient">
+                <input type="button" value="Water" id="ingredient">
+            </div>
+            <div class = "button-container">
+                <input type="button" value="Butter" id="ingredient">
+                <input type="button" value="Yeast" id="ingredient">
+                <input type="button" value="Baking Powder" id="ingredient">
+            </div>
+            <div class = "button-container">
+                <input type="button" value="Sugar" id="ingredient">
+                <input type="button" value="Vanilla Extract" id="ingredient">
+                <input type="button" value="Corn Starch" id="ingredient">
+            </div>
+            <div class = "button-container">
+                <input type="button" value="Heavy Cream" id="ingredient">
+                <input type="button" value="Milk" id="ingredient">
+                <input type="button" value="Shortning" id="ingredient">
+            </div>
         </div>
         <div align = "center" id = "random-recipie-container">
             <h3>. . . Or Get a Random Meal!</h3>
-            <img src="bread.png" alt="">
+            <img src="bread.png" alt="picture of a bread emoji">
             <h4 id = "random-recipie-name">Look at that bread!</h4> <br>
             <p id = "random-recipie"></p>
         </div>
