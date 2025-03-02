@@ -12,6 +12,12 @@ function addToTaglist(tag) {
     console.log(pageTaglist);
 }
 
+
+function setColor(id) {
+    let s = document.getElementById(id);
+    s.style.color = s.style.color;
+}
+
 async function setPageMealList(mealList) {
     pageMealList = await mealList;
     console.log(pageMealList);
