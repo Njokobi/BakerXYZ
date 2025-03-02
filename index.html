@@ -35,7 +35,7 @@
         <input type="button" value="Milk" id="ingredient" onclick="addToTaglist(`i=milk`)">
         <input type="button" value="Shortening" id="ingredient" onclick="addToTaglist(`i=shortening`)">    
     </div>
-    <input type="button" value="Find Your Recipie!" id="submit">
+    <input type="button" value="Find Your Recipie!" id="submit" onclick="setPageMealList(getMealListByIdList(getIdsByPageTaglist()))">
 
     <div>
         <h3>Baking Fun Below!</h3>
