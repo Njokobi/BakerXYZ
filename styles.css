@@ -1,5 +1,12 @@
 * {
     font-family: Jua, serif;
+    --frosting-pink: #FFDDF4;
+    --dough-brown: #EACAAB;
+    --jam-red: #FF95D3;
+    --zest-yellow: #FFF492;
+    --mint-green: #CFFDED;
+    --berry-blue: #7FC5FF;
+    --grape-purple: #CCA8EF;
 }
 
 #selecta-recipie-container {
