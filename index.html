@@ -2,11 +2,31 @@
 <html>
     <head>
         <title>BakerXYZ</title>
+        <link rel="stylesheet" href="stlyes.css">
     </head>
     <body>
-        <div>
+        <div align = "center" id = "site-header">
             <h1>BakerXYZ</h1>
-            <h2></h2>
+            <h2 id="saying">For when you don't know what to bake</h2>
+        </div>
+        <div align = "center" id = "selecta-recipie-container">
+            <h3>Select Your Ingredients!</h3>
+            <form action="">
+                <input type = "checkbox" name="eggs" id="ingredient">Eggs</input> <br>
+                <input type = "checkbox" name="flour" id="ingredient">Flour</input> <br>
+                <input type = "checkbox" name="apples" id="ingredient">Apples</input> <br>
+                <input type = "checkbox" name="banana" id="ingredient">Banana</input> <br>
+                <input type = "checkbox" name="pumpkin" id="ingredient">Pumpkin</input> <br>
+                <input type = "checkbox" name="Banana" id="ingredient">Banana</input> <br>
+                <input type = "checkbox" name="Vanilla" id="ingredient">Banana</input> <br>
+            </form>
+            
+        </div>
+        <div align = "center" id = "random-recipie-container">
+            <h3>. . . Or Get a Random Meal!</h3>
+            <img src="bread.png" alt="">
+            <h4 id = "random-recipie-name">Look at that bread!</h4> <br>
+            <p id = "random-recipie"></p>
         </div>
     </body>
     <script src="index.js"></script>
