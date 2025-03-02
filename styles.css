@@ -47,8 +47,12 @@ h3 {
 
 #selecta-recipie-container {
     align-items: center;
-    margin: 0 auto;
-    color: var(--frosting-pink)
+    margin-left: 25%;
+    margin-right: 25%;
+    color: var(--frosting-pink);
+    border: var(--grape-purple);
+    border-radius: 2rem;
+    background: var(--grape-purple);
 }
 
 #selecta-recipie-container input {
@@ -62,7 +66,6 @@ h3 {
     transition: all 0.3s ease-in-out;
     color: var(--donut-pink);
     background: var(--frosting-pink);
-    
 }
 
 #back {
@@ -121,6 +124,8 @@ h3 {
 #submit:hover {
     cursor: pointer;
     transform: scale(1.05);
+    color: var(--mint-green);
+    background: var(--tea-green);
 }
 
 #random-recipe-name{
@@ -141,6 +146,8 @@ h3 {
 
 #recipe-container{
     height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
     background: #e1c6ff;
     border-radius: 2rem;
     border: var(--grape-purple);
