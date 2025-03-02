@@ -1,14 +1,15 @@
 let pageTaglist = [];
 let pageMealList = [];
-let mandatoryTagList = [`dessert`, `tart`, `sweet`, `pudding`, `baking`, `pancake`];
-let randTagList = [`c=dessert`, `c=tart`, `c=sweet`, `c=pudding`, `c=baking`, `c=pancake`];
+const mandatoryTagList = [`dessert`, `tart`, `sweet`, `pudding`, `baking`, `pancake`];
+const randTagList = [`c=dessert`, `c=tart`, `c=sweet`, `c=pudding`, `c=baking`, `c=pancake`];
 
 function addToTaglist(tag) {
     if (pageTaglist.includes(tag)) {
-        pageTaglist.splice(pageTaglist.indexOf(tag));
+        pageTaglist.splice(pageTaglist.indexOf(tag), 1);
     } else {
         pageTaglist.push(tag);
     }
+    document.querySelector("#tag-list").textContent = pageTaglist.toString().replace(/i=/g, " ").replace(/_/g, " ").replace(" ", "");
     console.log(pageTaglist);
 }
 
@@ -40,18 +41,6 @@ async function getIdsByTaglist(taglist) {
             })
     }
     return idList;
-}
-
-async function getRandomMealId() {
-    console.log(`Fetching: https://www.themealdb.com/api/json/v1/1/random.php`)
-    return await fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
-        .then((res) => {
-            console.log(res);
-            return res.json();
-        }).then((data) => {
-            meal = data.meals[0];
-            return meal.idMeal;
-        });
 }
 
 async function getMealById(id) {
@@ -100,4 +89,18 @@ async function getMealListByIdList(idListPromise) {
     return tempList.sort((a, b) => {
         -a.strMeal.toLowerCase().localeCompare(b.strMeal.toLowerCase());
     });
+}
+
+function getRandomMeal(){
+    return await 
+}
+
+async function setActiveMeal(meal){
+    document.querySelector("#recipe-name").textContent = meal.strMeal;
+    document.querySelector("#recipe-text").textContent = meal.strInstructions;
+    if(meal.strMealThumb !== null){
+        document.querySelector("#recipe-image").src = meal.strMealThumb;
+    } else{
+        document.querySelector("#recipe-image").src = "random-meal-placeholder.gif";
+    }
 }

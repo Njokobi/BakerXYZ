@@ -26,22 +26,22 @@ h3 {
     padding-bottom: 20px;
 }
 
-.header{
+.header {
     color: var(--donut-pink);
     font-weight:bold;
     font-style: italic;
 }
 
-.ingredients{
+.ingredients {
     font-family: Jua, serif;
     color:var(--berry-blue);
 }
 
-.baking-fun{
+.baking-fun {
     color:var(--berry-blue);
 }
 
-.random{
+.random {
     color:var(--berry-blue);
 }
 
@@ -63,6 +63,19 @@ h3 {
     color: var(--donut-pink);
     background: var(--frosting-pink);
     
+}
+
+#back {
+    width: 200px;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+    transition: all 0.3s ease-in-out;
+    color: var(--icing-pink);
+    background: var(--frosting-pink);
 }
 
 #top:hover {

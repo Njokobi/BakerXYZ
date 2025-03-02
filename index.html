@@ -11,7 +11,7 @@
 
 <body>
     <div align="center" id="site-header">
-        <img src="logo.png" alt="logo" width="400px" height = "200px">
+        <img src="logo.png" alt="logo" width="auto" height = "200px">
         <h2 id="saying" class="header">"For when you don't know what to bake!"</h2>
     </div>
     <h3 align="center" class="ingredients">Select Your Ingredients!</h3>
@@ -38,17 +38,26 @@
         <br>
         <input type="button" value="Find Your Recipe!" style="background: #f8e5ff; color: #CCA8EF" id="submit" onclick="setPageMealList(getMealListByIdList(getIdsByPageTaglist()))">
     </div>
-
+    <h2>Your ingredients:</h2>
+    <h2 id="tag-list"></h2>
     <div align = "center">
         <h3 class="baking-fun">Baking Fun Below!</h3>
-        <img src="" alt="recipe picture">
-        <h4 id="selected-recipie-name"></h4> <br>
-        <p id="selected-recipie"></p>
-    </div>
     </div>
     <br>
-    <br>
-    <div align="center" id="random-recipie-container">
+    <div align="center" id="recipie-container">
+        <img id="recipe-image">
+        <div id="recipe-text-container">        
+            <h3 id="recipe-name">Loading Recipe</h3> 
+            <br>
+            <p id="ingredients">...</p>
+            <br>
+            <p id="recipe-text">...</p>
+            <br>
+            <a id="recipe-origin"></a>
+        </div>
+    </div>
+    </div>
+    <div align="center" id="random-container">
         <h3 class="random">. . . Or Get a Random Meal!</h3>
         <img src="download-2.gif" height="350" alt="animation stating: you're next favorite recipe is one click away!">
     </div>    
