@@ -9,4 +9,18 @@
 
 #selecta-recipie-container input {
     width: 200px;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+    transition: all 0.3s ease-in-out;
+    color:#CDC392;
+    
+}
+
+#selecta-recipie-container input:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
