@@ -130,7 +130,7 @@ h3 {
     padding-top: 25px;
 }
 
-#random-ingredienta{
+#recipe-text{
     padding-top: 15px;
     color: #ae7eca;
 }
@@ -146,7 +146,7 @@ h3 {
 
 #boxes{
     width: 800px;
-    height: 400px;
+    height: auto;
     background: #e1c6ff;
     border-radius: 2rem;
     border: var(--grape-purple);
